@@ -153,78 +153,77 @@
 <!-- End paper abstract -->
 
 
-<!-- ADE20K Image Carousel -->
-<section class="hero is-small">
-  <div class="hero-body" style="padding: 1rem 0;">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">ADE20K Dataset: Texture Variations</h2>
-      <div id="ade20k-carousel" class="carousel results-carousel" style="max-width: 300px; margin: auto;">
-
-        <div class="item">
-          <img src="static/images/ADE_train_00005115.jpg" alt="Texture 0.0" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Real Image</h2>
+<!-- ADE20K Image Marquee -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">ADE20K Dataset: Texture Variations</h2>
+    <p class="has-text-centered" style="margin-bottom: 20px;">
+      <strong>Figure 2.</strong> Samples of Textured-ADE20K dataset. Incremental changes in η produce gradual change in texture shift for the resulting image.
+      For low η values most of the semantic information in the image is retained. For η = 1 the instances are completely shifted towards the target texture.
+    </p>
+    
+    <div class="marquee-wrapper">
+      <div class="container">
+        <div class="marquee-block">
+          <div class="marquee-inner to-left">
+            <span>
+              <div class="marquee-item">
+                <img src="static/images/ADE_train_00005115.jpg" alt="Original Image"/>
+                <p class="text-white">Original Image</p>
+              </div>
+              <div class="marquee-item">
+                <img src="static/images/textured_degree0.0_v2.jpg" alt="Texture 0.0"/>
+                <p class="text-white">η = 0.0</p>
+              </div>
+              <div class="marquee-item">
+                <img src="static/images/textured_degree0.1_v2.jpg" alt="Texture 0.1"/>
+                <p class="text-white">η = 0.1</p>
+              </div>
+              <div class="marquee-item">
+                <img src="static/images/textured_degree0.2_v2.jpg" alt="Texture 0.2"/>
+                <p class="text-white">η = 0.2</p>
+              </div>
+              <div class="marquee-item">
+                <img src="static/images/textured_degree0.3_v2.jpg" alt="Texture 0.3"/>
+                <p class="text-white">η = 0.3</p>
+              </div>
+              <div class="marquee-item">
+                <img src="static/images/textured_degree0.4_v2.jpg" alt="Texture 0.4"/>
+                <p class="text-white">η = 0.4</p>
+              </div>
+              <div class="marquee-item">
+                <img src="static/images/textured_degree0.5_v2.jpg" alt="Texture 0.5"/>
+                <p class="text-white">η = 0.5</p>
+              </div>
+            </span>
+            <span>
+              <div class="marquee-item">
+                <img src="static/images/textured_degree0.6_v2.jpg" alt="Texture 0.6"/>
+                <p class="text-white">η = 0.6</p>
+              </div>
+              <div class="marquee-item">
+                <img src="static/images/textured_degree0.7_v2.jpg" alt="Texture 0.7"/>
+                <p class="text-white">η = 0.7</p>
+              </div>
+              <div class="marquee-item">
+                <img src="static/images/textured_degree0.8_v2.jpg" alt="Texture 0.8"/>
+                <p class="text-white">η = 0.8</p>
+              </div>
+              <div class="marquee-item">
+                <img src="static/images/textured_degree0.9_v2.jpg" alt="Texture 0.9"/>
+                <p class="text-white">η = 0.9</p>
+              </div>
+              <div class="marquee-item">
+                <img src="static/images/textured_degree1.0_v2.jpg" alt="Texture 1.0"/>
+                <p class="text-white">η = 1.0</p>
+              </div>
+              <div class="marquee-item">
+                <img src="static/images/ADE_train_00005115_seg.png" alt="Segmentation Map"/>
+                <p class="text-white">Segmentation Map</p>
+              </div>
+            </span>
+          </div>
         </div>
-        
-        <div class="item">
-          <img src="static/images/textured_degree0.0_v2.jpg" alt="Texture 0.0" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Textured Image (η = 0.0)</h2>
-        </div>
-        
-        <div class="item">
-          <img src="static/images/textured_degree0.1_v2.jpg" alt="Texture 0.1" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Textured Image (η = 0.1)</h2>
-        </div>
-        
-        <div class="item">
-          <img src="static/images/textured_degree0.2_v2.jpg" alt="Texture 0.2" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Textured Image (η = 0.2)</h2>
-        </div>
-        
-        <div class="item">
-          <img src="static/images/textured_degree0.3_v2.jpg" alt="Texture 0.3" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Textured Image (η = 0.3)</h2>
-        </div>
-        
-        <div class="item">
-          <img src="static/images/textured_degree0.4_v2.jpg" alt="Texture 0.4" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Textured Image (η = 0.4)</h2>
-        </div>
-        
-        <div class="item">
-          <img src="static/images/textured_degree0.5_v2.jpg" alt="Texture 0.5" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Textured Image (η = 0.5)</h2>
-        </div>
-        
-        <div class="item">
-          <img src="static/images/textured_degree0.6_v2.jpg" alt="Texture 0.6" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Textured Image (η = 0.6)</h2>
-        </div>
-        
-        <div class="item">
-          <img src="static/images/textured_degree0.7_v2.jpg" alt="Texture 0.7" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Textured Image (η = 0.7)</h2>
-        </div>
-        
-        <div class="item">
-          <img src="static/images/textured_degree0.8_v2.jpg" alt="Texture 0.8" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Textured Image (η = 0.8)</h2>
-        </div>
-        
-        <div class="item">
-          <img src="static/images/textured_degree0.9_v2.jpg" alt="Texture 0.9" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Textured Image (η = 0.9)</h2>
-        </div>
-        
-        <div class="item">
-          <img src="static/images/textured_degree1.0_v2.jpg" alt="Texture 1.0" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Textured Image (η = 1.0)</h2>
-        </div>
-        
-        <div class="item">
-          <img src="static/images/ADE_train_00005115_seg.png" alt="Segmentation Map" style="width: 100%; height: auto;"/>
-          <h2 class="subtitle has-text-centered" style="margin-top: 5px;">Segmentation Map of the Original ADE20K Image</h2>
-        </div>
-        
       </div>
     </div>
   </div>
