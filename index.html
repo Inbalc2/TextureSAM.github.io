@@ -152,7 +152,6 @@
 </section>
 <!-- End paper abstract -->
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -171,15 +170,20 @@
             margin: auto;
         }
 
-        .slick-slide img {
-            width: 100%;
-            height: auto;
+        /* Ensure images are same size */
+        .item img {
+            width: 300px; /* Fixed width */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: auto;
         }
 
+        /* Adjust navigation arrows */
         .slick-prev, .slick-next {
             z-index: 1000;
         }
 
+        /* Style navigation dots */
         .slick-dots {
             bottom: -30px;
         }
@@ -206,7 +210,7 @@
             <div class="carousel-container">
                 <div id="ade20k-carousel" class="carousel results-carousel">
                     <div class="item">
-                        <img src="static/images/ADE_train_00005115.jpg" alt="Texture 0.0"/>
+                        <img src="static/images/ADE_train_00005115.jpg" alt="Real Image"/>
                         <h2 class="subtitle">Real Image</h2>
                     </div>
 
@@ -316,6 +320,7 @@
 
 </body>
 </html>
+
 
 
 <!-- Results Section -->
