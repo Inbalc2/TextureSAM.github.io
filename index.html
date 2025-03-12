@@ -170,8 +170,8 @@
             margin: auto;
         }
 
-        /* Ensure images are same size */
-        .item img {
+        /* Ensure images are the same size */
+        .slick-slide img {
             width: 300px; /* Fixed width */
             height: auto; /* Maintain aspect ratio */
             display: block;
@@ -208,71 +208,22 @@
             </p>
 
             <div class="carousel-container">
-                <div id="ade20k-carousel" class="carousel results-carousel">
-                    <div class="item">
-                        <img src="static/images/ADE_train_00005115.jpg" alt="Real Image"/>
-                        <h2 class="subtitle">Real Image</h2>
-                    </div>
+                <div id="ade20k-carousel">
+                    
+                    <div><img src="static/images/ADE_train_00005115.jpg" alt="Real Image"/><h2 class="subtitle">Real Image</h2></div>
+                    <div><img src="static/images/textured_degree0.0_v2.jpg" alt="Texture 0.0"/><h2 class="subtitle">Textured Image (η = 0.0)</h2></div>
+                    <div><img src="static/images/textured_degree0.1_v2.jpg" alt="Texture 0.1"/><h2 class="subtitle">Textured Image (η = 0.1)</h2></div>
+                    <div><img src="static/images/textured_degree0.2_v2.jpg" alt="Texture 0.2"/><h2 class="subtitle">Textured Image (η = 0.2)</h2></div>
+                    <div><img src="static/images/textured_degree0.3_v2.jpg" alt="Texture 0.3"/><h2 class="subtitle">Textured Image (η = 0.3)</h2></div>
+                    <div><img src="static/images/textured_degree0.4_v2.jpg" alt="Texture 0.4"/><h2 class="subtitle">Textured Image (η = 0.4)</h2></div>
+                    <div><img src="static/images/textured_degree0.5_v2.jpg" alt="Texture 0.5"/><h2 class="subtitle">Textured Image (η = 0.5)</h2></div>
+                    <div><img src="static/images/textured_degree0.6_v2.jpg" alt="Texture 0.6"/><h2 class="subtitle">Textured Image (η = 0.6)</h2></div>
+                    <div><img src="static/images/textured_degree0.7_v2.jpg" alt="Texture 0.7"/><h2 class="subtitle">Textured Image (η = 0.7)</h2></div>
+                    <div><img src="static/images/textured_degree0.8_v2.jpg" alt="Texture 0.8"/><h2 class="subtitle">Textured Image (η = 0.8)</h2></div>
+                    <div><img src="static/images/textured_degree0.9_v2.jpg" alt="Texture 0.9"/><h2 class="subtitle">Textured Image (η = 0.9)</h2></div>
+                    <div><img src="static/images/textured_degree1.0_v2.jpg" alt="Texture 1.0"/><h2 class="subtitle">Textured Image (η = 1.0)</h2></div>
+                    <div><img src="static/images/ADE_train_00005115_seg.png" alt="Segmentation Map"/><h2 class="subtitle">Segmentation Map</h2></div>
 
-                    <div class="item">
-                        <img src="static/images/textured_degree0.0_v2.jpg" alt="Texture 0.0"/>
-                        <h2 class="subtitle">Textured Image (η = 0.0)</h2>
-                    </div>
-
-                    <div class="item">
-                        <img src="static/images/textured_degree0.1_v2.jpg" alt="Texture 0.1"/>
-                        <h2 class="subtitle">Textured Image (η = 0.1)</h2>
-                    </div>
-
-                    <div class="item">
-                        <img src="static/images/textured_degree0.2_v2.jpg" alt="Texture 0.2"/>
-                        <h2 class="subtitle">Textured Image (η = 0.2)</h2>
-                    </div>
-
-                    <div class="item">
-                        <img src="static/images/textured_degree0.3_v2.jpg" alt="Texture 0.3"/>
-                        <h2 class="subtitle">Textured Image (η = 0.3)</h2>
-                    </div>
-
-                    <div class="item">
-                        <img src="static/images/textured_degree0.4_v2.jpg" alt="Texture 0.4"/>
-                        <h2 class="subtitle">Textured Image (η = 0.4)</h2>
-                    </div>
-
-                    <div class="item">
-                        <img src="static/images/textured_degree0.5_v2.jpg" alt="Texture 0.5"/>
-                        <h2 class="subtitle">Textured Image (η = 0.5)</h2>
-                    </div>
-
-                    <div class="item">
-                        <img src="static/images/textured_degree0.6_v2.jpg" alt="Texture 0.6"/>
-                        <h2 class="subtitle">Textured Image (η = 0.6)</h2>
-                    </div>
-
-                    <div class="item">
-                        <img src="static/images/textured_degree0.7_v2.jpg" alt="Texture 0.7"/>
-                        <h2 class="subtitle">Textured Image (η = 0.7)</h2>
-                    </div>
-
-                    <div class="item">
-                        <img src="static/images/textured_degree0.8_v2.jpg" alt="Texture 0.8"/>
-                        <h2 class="subtitle">Textured Image (η = 0.8)</h2>
-                    </div>
-
-                    <div class="item">
-                        <img src="static/images/textured_degree0.9_v2.jpg" alt="Texture 0.9"/>
-                        <h2 class="subtitle">Textured Image (η = 0.9)</h2>
-                    </div>
-
-                    <div class="item">
-                        <img src="static/images/textured_degree1.0_v2.jpg" alt="Texture 1.0"/>
-                        <h2 class="subtitle">Textured Image (η = 1.0)</h2>
-                    </div>
-
-                    <div class="item">
-                        <img src="static/images/ADE_train_00005115_seg.png" alt="Segmentation Map"/>
-                        <h2 class="subtitle">Segmentation Map</h2>
-                    </div>
                 </div>
             </div>
 
@@ -280,6 +231,50 @@
     </div>
 </section>
 <!-- End ADE20K Image Carousel -->
+
+<!-- jQuery and Slick Carousel Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('#ade20k-carousel').slick({
+            slidesToShow: 3,  // Ensures 3 images are visible at a time
+            slidesToScroll: 3, // Moves 3 images at a time
+            dots: true,
+            infinite: true,
+            autoplay: false,
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+</body>
+</html>
+
 
 <!-- jQuery and Slick Carousel Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
