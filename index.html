@@ -322,29 +322,25 @@
             <figure>
               <img src="static/images/TextureSAM.png" alt="RWTD Segmentation Results" style="width: 130%; max-width: 1100px;">
               <figcaption>
-                TextureSAM improves real-world segmentation, adapting better to texture variations than SAM-2.
+                Examples for segmentation of natural images from the Real-World Textured Dataset. Compared with the original SAM (2nd and
+                3rd rows, SAM-2* indicating modified inference parameters), TextureSAM (4th row) is more adept at recognizing areas defined by texture
+                changes. SAM’s reliance on semantic shape results in fragmented segmentation, while TextureSAM provides segmentation of whole areas
+                defined by texture changes.
               </figcaption>
               <p><strong>Dataset: RWTD (Real-World Textured Dataset)</strong></p>
             </figure>
           </div>
 
-          <!-- ADE20K Results -->
-          <div class="has-text-centered" style="margin-bottom: 40px;">
-            <figure>
-              <img src="static/images/ADE20K.png" alt="ADE20K Segmentation Results" style="width: 100%; max-width: 1100px;">
-              <figcaption>
-                TextureSAM preserves texture regions better than SAM-2, avoiding fragmentation of areas like trees and walls.
-                <br><strong>Dataset: ADE20K</strong>
-              </figcaption>
-            </figure>
-          </div>
 
           <!-- STMD Results -->
           <div class="has-text-centered" style="margin-bottom: 40px;">
             <figure>
-              <img src="static/images/STMD.png" alt="STMD Segmentation Results" style="width: 100%; max-width: 1100px;">
+              <img src="static/images/Results_images.png" alt="ADE20K and STMD Segmentation Results" style="width: 100%; max-width: 1100px;">
               <figcaption>
-                On STMD, TextureSAM segments textures more accurately, outperforming SAM-2 in mIoU and ARI.
+                Segmentation results on ADE20K (left) and STMD (right). 
+                TextureSAM (3rd row) produces comparable semantic segmentation to SAM-2 (2nd row, 3rd row with modified inference). 
+                TextureSAM’s predictions align better with GT, preserving entire textured regions (e.g., trees, walls). 
+                On the STMD dataset, TextureSAM maps better to GT, while SAM-2 fragments textures into smaller elements.
               </figcaption>
               <p><strong>Dataset: STMD (Synthetic Texture-based Material Dataset)</strong></p>
             </figure>
