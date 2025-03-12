@@ -223,46 +223,46 @@
 
 <<<<<<< HEAD
 =======
-          <!-- Augmentation Illustration -->
-          <div class="has-text-centered">
+<!-- Results Section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            We evaluated TextureSAM on multiple datasets, comparing it to SAM-2. Below are qualitative results demonstrating its improvements in texture-based segmentation.
+          </p>
+          
+          <!-- TextureSAM on Real-World Data (Now First) -->
+          <div class="has-text-centered" style="margin-bottom: 40px;">
             <figure>
-              <embed src="static/images/augmentation.pdf" type="application/pdf" width="100%" height="600px">
+              <img src="static/images/TextureSAM.png" alt="RWTD Segmentation Results" style="width: 100%; max-width: 1100px;">
               <figcaption>
-                Illustration of generating textured images for dataset augmentation using [28]. This process was used to create the augmented ADE20K dataset, enhancing texture-based segmentation performance.
+                TextureSAM improves real-world segmentation, adapting better to texture variations than SAM-2.
               </figcaption>
+              <p><strong>Dataset: RWTD (Real-World Textured Dataset)</strong></p>
             </figure>
           </div>
 
-          
           <!-- ADE20K Results -->
-          <div class="has-text-centered">
+          <div class="has-text-centered" style="margin-bottom: 40px;">
             <figure>
-              <img src="static/images/ADE20K.png" alt="ADE20K Segmentation Results" style="width: 100%; max-width: 900px;">
+              <img src="static/images/ADE20K.png" alt="ADE20K Segmentation Results" style="width: 100%; max-width: 1100px;">
               <figcaption>
-                TextureSAM achieves comparable segmentation to SAM-2 but provides better consistency in texture-rich areas such as trees and walls. Unlike SAM-2, which may fragment textured regions into multiple segments, TextureSAM ensures that entire regions with similar textures are marked as a single instance, aligning more closely with the ground truth.
+                TextureSAM preserves texture regions better than SAM-2, avoiding fragmentation of areas like trees and walls.
               </figcaption>
             </figure>
           </div>
 
           <!-- STMD Results -->
-          <div class="has-text-centered">
+          <div class="has-text-centered" style="margin-bottom: 40px;">
             <figure>
-              <img src="static/images/STMD.png" alt="STMD Segmentation Results" style="width: 100%; max-width: 900px;">
+              <img src="static/images/STMD.png" alt="STMD Segmentation Results" style="width: 100%; max-width: 1100px;">
               <figcaption>
-                On the synthetic STMD dataset, TextureSAM significantly improves segmentation performance compared to SAM-2. The model trained with strong texture augmentations achieves the highest mean Intersection over Union (mIoU) and Adjusted Rand Index (ARI), outperforming both SAM-2 and the version of TextureSAM with mild augmentations. SAM-2 struggles with segmenting non-salient, texture-rich regions, often producing sparse coverage, whereas TextureSAM provides more cohesive segmentations.
+                On STMD, TextureSAM segments textures more accurately, outperforming SAM-2 in mIoU and ARI.
               </figcaption>
               <p><strong>Dataset: STMD (Synthetic Texture-based Material Dataset)</strong></p>
-            </figure>
-          </div>
-
-          <!-- TextureSAM on Real-World Data -->
-          <div class="has-text-centered">
-            <figure>
-              <img src="static/images/TextureSAM.png" alt="RWTD Segmentation Results" style="width: 100%; max-width: 900px;">
-              <figcaption>
-                On real-world textured images, TextureSAM consistently outperforms SAM-2 by recognizing texture-defined areas more effectively. While SAM-2 relies heavily on semantic object shapes, leading to fragmented segmentations, TextureSAM adapts to texture variations and produces segmentation maps that better match the expected ground truth regions.
-              </figcaption>
-              <p><strong>Dataset: RWTD (Real-World Textured Dataset)</strong></p>
             </figure>
           </div>
           
@@ -272,6 +272,7 @@
   </div>
 </section>
 <!-- End Results Section -->
+
 
 
 
