@@ -56,25 +56,6 @@
 <body>
 
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Segment Anything Models (SAM) have achieved remarkable success in object segmentation tasks across diverse datasets. However, these models are predominantly trained on large-scale semantic segmentation datasets, which introduce a bias toward object shape rather than texture cues in the image. This limitation is critical in domains such as medical imaging, material classification, and remote sensing, where texture changes define object boundaries. In this study, we investigate SAM’s bias toward semantics over textures and introduce a new texture-aware foundation model, TextureSAM, which performs superior segmentation in texture-dominant scenarios. To achieve this, we employ a novel fine-tuning approach that incorporates texture augmentation techniques, incrementally modifying training images to emphasize texture features. By leveraging a novel texture-alternation of the ADE20K dataset, we guide TextureSAM to prioritize texture-defined regions, thereby mitigating the inherent shape bias present in the original SAM model. Our extensive experiments demonstrate that TextureSAM significantly outperforms SAM on both natural (+0.2 mIoU) and synthetic (+0.18 mIoU) texture-based segmentation datasets. The code and texture-augmented dataset will be publicly available.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -152,7 +133,55 @@
 
 
 
+<!-- Paper abstract -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADE20K Image Carousel</title>
 
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+
+    <style>
+        /* Center carousel */
+        .carousel-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        /* Ensure images are the same size and have spacing */
+        .slick-slide {
+            margin: 0 10px; /* Adds space between images */
+        }
+
+        .slick-slide img {
+            width: 300px; /* Fixed width */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: auto;
+        }
+
+        /* Adjust navigation arrows */
+        .slick-prev, .slick-next {
+            z-index: 1000;
+        }
+
+        /* Style navigation dots */
+        .slick-dots {
+            bottom: -30px;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
 
 <!-- ADE20K Image Carousel -->
 <section class="hero is-small">
@@ -195,8 +224,7 @@
       <div class="container has-text-centered">
           <h2 class="title is-3">Illustration of Texture-Based Image Generation</h2>
           <figure>
-              <img src="static/images/ADE20K_figure.png" alt="Texture Image Generation Process" 
-                   style="width: 50%; max-width: 500px; display: block; margin: auto;">
+              <img src="static/images/ADE20K_figure.png" alt="Texture Image Generation Process" style="width: 100%; max-width: 1000px; display: block; margin: auto;">
               <figcaption style="margin-top: 15px; font-size: 1rem; color: #4a4a4a;">
                   Illustration of generating textured images for dataset augmentation using a compositional neural texture (CNT) approach. 
                   SAM-2 couples shape and texture cues, expecting specific textures for certain objects. 
@@ -333,7 +361,7 @@
                 TextureSAM’s predictions align better with GT, preserving entire textured regions (e.g., trees, walls). 
                 On the STMD dataset, TextureSAM maps better to GT, while SAM-2 fragments textures into smaller elements.
               </figcaption>
-              <p><strong>Dataset: STMD (Synthetic Textured Masks Dataset)</strong></p>
+              <p><strong>Dataset: STMD (Synthetic Texture-based Material Dataset)</strong></p>
             </figure>
           </div>
           
