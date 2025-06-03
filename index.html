@@ -75,7 +75,7 @@
               <span class="author-block">Gal Oren</span>
             </div>
             <div style="margin-top: 10px;">
-              <a href="https://github.com/TextureSAM" target="_blank">🔗 GitHub Code</a> |
+              <a href="https://github.com/TextureSAM" target="_blank">🔗 Code</a> |
               <a href="https://arxiv.org/abs/2505.16540" target="_blank">🔗 Paper</a>
             </div>
           </div>
@@ -162,38 +162,44 @@
 
 <!-- ADE20K Image Carousel -->
 <section class="hero is-small">
-    <div class="hero-body" style="padding: 1rem 0;">
-        <div class="container">
-            <h2 class="title is-3 has-text-centered">ADE20K Dataset: Texture Variations</h2>
-            
-            <!-- Added Caption Below the Title -->
-            <p class="has-text-centered" style="margin-bottom: 15px; font-size: 1.1rem; color: #4a4a4a;">
-                Gradual texture shifts in ADE20K images as η varies from 0 to 1, preserving semantics at low values and fully transforming textures at η = 1.
-            </p>
+  <div class="hero-body" style="padding: 1rem 0;">
+      <div class="container">
+          <h2 class="title is-3 has-text-centered">ADE20K Dataset: Texture Variations</h2>
+          
+          <!-- Added Caption Below the Title -->
+          <p class="has-text-centered" style="margin-bottom: 15px; font-size: 1.1rem; color: #4a4a4a;">
+              Gradual texture shifts in ADE20K images as η varies from 0 to 1, preserving semantics at low values and fully transforming textures at η = 1.
+          </p>
 
-            <div class="carousel-container">
-                <div id="ade20k-carousel">
-                    
-                    <div><img src="static/images/ADE_train_00005115.jpg" alt="Real Image"/><h2 class="subtitle">Real Image</h2></div>
-                    <div><img src="static/images/textured_degree0.0_v2.jpg" alt="Texture 0.0"/><h2 class="subtitle">Textured Image (η = 0.0)</h2></div>
-                    <div><img src="static/images/textured_degree0.1_v2.jpg" alt="Texture 0.1"/><h2 class="subtitle">Textured Image (η = 0.1)</h2></div>
-                    <div><img src="static/images/textured_degree0.2_v2.jpg" alt="Texture 0.2"/><h2 class="subtitle">Textured Image (η = 0.2)</h2></div>
-                    <div><img src="static/images/textured_degree0.3_v2.jpg" alt="Texture 0.3"/><h2 class="subtitle">Textured Image (η = 0.3)</h2></div>
-                    <div><img src="static/images/textured_degree0.4_v2.jpg" alt="Texture 0.4"/><h2 class="subtitle">Textured Image (η = 0.4)</h2></div>
-                    <div><img src="static/images/textured_degree0.5_v2.jpg" alt="Texture 0.5"/><h2 class="subtitle">Textured Image (η = 0.5)</h2></div>
-                    <div><img src="static/images/textured_degree0.6_v2.jpg" alt="Texture 0.6"/><h2 class="subtitle">Textured Image (η = 0.6)</h2></div>
-                    <div><img src="static/images/textured_degree0.7_v2.jpg" alt="Texture 0.7"/><h2 class="subtitle">Textured Image (η = 0.7)</h2></div>
-                    <div><img src="static/images/textured_degree0.8_v2.jpg" alt="Texture 0.8"/><h2 class="subtitle">Textured Image (η = 0.8)</h2></div>
-                    <div><img src="static/images/textured_degree0.9_v2.jpg" alt="Texture 0.9"/><h2 class="subtitle">Textured Image (η = 0.9)</h2></div>
-                    <div><img src="static/images/textured_degree1.0_v2.jpg" alt="Texture 1.0"/><h2 class="subtitle">Textured Image (η = 1.0)</h2></div>
-                    <div><img src="static/images/ADE_train_00005115_seg.png" alt="Segmentation Map"/><h2 class="subtitle">Segmentation Map</h2></div>
+          <div class="carousel-container">
+              <div id="ade20k-carousel">
+                  
+                  <div><img src="static/images/ADE_train_00005115.jpg" alt="Real Image"/><h2 class="subtitle">Real Image</h2></div>
+                  <div><img src="static/images/textured_degree0.0_v2.jpg" alt="Texture 0.0"/><h2 class="subtitle">Textured Image (η = 0.0)</h2></div>
+                  <div><img src="static/images/textured_degree0.1_v2.jpg" alt="Texture 0.1"/><h2 class="subtitle">Textured Image (η = 0.1)</h2></div>
+                  <div><img src="static/images/textured_degree0.2_v2.jpg" alt="Texture 0.2"/><h2 class="subtitle">Textured Image (η = 0.2)</h2></div>
+                  <div><img src="static/images/textured_degree0.3_v2.jpg" alt="Texture 0.3"/><h2 class="subtitle">Textured Image (η = 0.3)</h2></div>
+                  <div><img src="static/images/textured_degree0.4_v2.jpg" alt="Texture 0.4"/><h2 class="subtitle">Textured Image (η = 0.4)</h2></div>
+                  <div><img src="static/images/textured_degree0.5_v2.jpg" alt="Texture 0.5"/><h2 class="subtitle">Textured Image (η = 0.5)</h2></div>
+                  <div><img src="static/images/textured_degree0.6_v2.jpg" alt="Texture 0.6"/><h2 class="subtitle">Textured Image (η = 0.6)</h2></div>
+                  <div><img src="static/images/textured_degree0.7_v2.jpg" alt="Texture 0.7"/><h2 class="subtitle">Textured Image (η = 0.7)</h2></div>
+                  <div><img src="static/images/textured_degree0.8_v2.jpg" alt="Texture 0.8"/><h2 class="subtitle">Textured Image (η = 0.8)</h2></div>
+                  <div><img src="static/images/textured_degree0.9_v2.jpg" alt="Texture 0.9"/><h2 class="subtitle">Textured Image (η = 0.9)</h2></div>
+                  <div><img src="static/images/textured_degree1.0_v2.jpg" alt="Texture 1.0"/><h2 class="subtitle">Textured Image (η = 1.0)</h2></div>
+                  <div><img src="static/images/ADE_train_00005115_seg.png" alt="Segmentation Map"/><h2 class="subtitle">Segmentation Map</h2></div>
 
-                </div>
-            </div>
+              </div>
+          </div>
 
-        </div>
-    </div>
+          <!-- SCROLL HINT BELOW CAROUSEL -->
+          <p class="has-text-centered" style="font-size: 0.9rem; color: #777; margin-top: 10px;">
+              <span style="font-size: 1.2rem;">⬅️</span> Scroll to see more <span style="font-size: 1.2rem;">➡️</span>
+          </p>
+
+      </div>
+  </div>
 </section>
+
 <!-- End ADE20K Image Carousel -->
 
 <section class="hero is-light">
